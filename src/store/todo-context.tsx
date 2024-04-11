@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { PropsWithChildren, createContext, useState } from 'react';
 import { Todo } from '../todo-model';
 
@@ -11,10 +12,10 @@ interface TodoContextObj {
 
 const context = {
   todos: [],
-  addTodo: (text: string, clearFn: (value: string) => void) => {},
-  deleteTodo: (id: number) => {},
-  moveTodoUp: (index: number) => {},
-  moveTodoDown: (index: number) => {},
+  addTodo: (_text: string, _clearFn: (value: string) => void) => {},
+  deleteTodo: (_id: number) => {},
+  moveTodoUp: (_index: number) => {},
+  moveTodoDown: (_index: number) => {},
 };
 export const TodoContext = createContext<TodoContextObj>(context);
 
